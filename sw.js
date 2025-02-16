@@ -6,7 +6,7 @@ self.addEventListener('install', event => {
                 '/index.html',
                 '/styles.css',
                 '/script.js',
-                '/icon.png'
+                '/Designer2.png'
             ]);
         })
     );
