@@ -72,3 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
     
     updateTimer();
 });
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+        .then(() => console.log('Service Worker зарегистрирован!'))
+        .catch(err => console.error('Ошибка:', err));
+}
