@@ -39,6 +39,8 @@ function generateRandomDigits() {
 
 document.addEventListener("DOMContentLoaded", function () {
     let loadTime = new Date();
+    loadTime.setMinutes(loadTime.getMinutes() - 20); // Уменьшаем время на 20 минут
+    
     let formattedDate = loadTime.toLocaleDateString();
     let formattedTime = loadTime.toLocaleTimeString();
     
