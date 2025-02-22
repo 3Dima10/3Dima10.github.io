@@ -15,7 +15,7 @@ function startOneHourTimer() {
             // const hours = Math.floor(timer / 3600);
             const minutes = Math.floor((timer % 3600) / 60);
             const seconds = timer % 60;
-            console.log(`${minutes}m ${seconds}s`);
+            // console.log(`${minutes}m ${seconds}s`);
         }
     }, 1000);
 }
