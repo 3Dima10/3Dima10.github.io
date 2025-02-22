@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadTime.setMinutes(loadTime.getMinutes() - 20); // Уменьшаем время на 20 минут
     
     let formattedDate = loadTime.toLocaleDateString();
-    let formattedTime = loadTime.toLocaleTimeString();
+    let formattedTime = loadTime.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
     
     let dateElement = document.getElementById("data-p");
     let timeElement = document.getElementById("taim-p");
